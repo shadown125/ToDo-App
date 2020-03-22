@@ -1,0 +1,44 @@
+.container {
+    max-width: 120rem;
+    margin: 8rem auto;
+    background-color: var(--color-grey-light-2);
+    box-shadow: var(--shadow-dark);
+
+    min-height: 80rem;
+    
+}
+
+.header {
+    font-size: 1.4rem;
+    height: 20rem;
+    background-color: #fff;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    background-image: linear-gradient(rgba(16, 29, 44, 0.73), rgba(16, 29, 44, 0.74)), url(../img/image-1.jpg) !important;
+    background-size: cover;
+    background-position: center;
+    
+
+}
+
+.content {
+    display: flex;
+    min-height: 45rem;
+
+    background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.94)), url(../img/image-2.jpg) !important;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.footer {
+    background-color:var(--color-footer);
+    min-height: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

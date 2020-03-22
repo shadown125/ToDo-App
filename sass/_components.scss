@@ -1,0 +1,239 @@
+///////////////////////////////////
+// TITLE
+
+.title {
+    flex: 0 0 100%;
+    color: var(--color-title);
+    
+    &__name {
+        text-align: center;
+        font-size: 4.5rem;
+    }
+}
+
+
+///////////////////////////////////
+// ADD
+
+.add {
+    flex: 0 0 80%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: var(--color-grey-light-2);
+        border: none;
+        padding: .7rem 2rem;
+        border-radius: 100px;
+        width: 90%;
+        margin-right: -3.25rem;
+        transition: all .1s linear;
+        margin-top: -2.5rem;
+
+        &:focus {
+            outline: none;
+            width: 100%;
+            background-color: var(--color-grey-light-3);
+        }
+
+        &:focus::placeholder {
+            color: transparent;
+        }
+
+        &::-webkit-input-placeholder {
+            font-weight: 100;
+            color: var(--color-grey-light-4);
+        }
+    }
+
+    &__input:focus + &__button {
+        background-color: var(--color-grey-light-3);
+    }
+
+    &__button {
+        border: none;
+        background-color: var(--color-grey-light-2);
+        margin-top: -2.5rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus {
+            outline: none;
+        }
+
+        &:active {
+            transform: translateY(2px);
+        }
+    }
+
+
+    &__icon {
+        height: 2rem;
+        width: 2rem;
+        fill: var(--color-grey-dark-3);
+        margin-top: 0.20rem;
+    }
+}
+
+///////////////////////////////////
+// MAIN
+
+.task-list {
+    flex: 0 0 50%;
+
+    &__title {
+        width: 80%;
+        margin: 2rem auto;
+        text-align: center;
+        background-color: var(--color-title-main-1);
+        border-radius: 100px;
+        color: var(--color-grey-light-3);
+    }
+
+    &__title-name {
+        font-size: 3rem;
+    }
+
+    &__span {
+
+    }
+
+    // container
+
+    &__items {
+        background-color: #fff;
+        width: 80%;
+        min-height: 35rem;
+        margin: auto;
+        border: 3px solid var(--color-title-main-1);
+        border-radius: 3px;
+        padding: .7rem 2rem;
+        font-size: 2rem;
+        
+    }
+
+    //ul
+
+    &__item-list {
+        list-style: none;
+    }
+
+    // li
+    
+    &__single-item {
+        // display: flex;
+        // justify-content: space-between;
+
+    }
+
+    &__btn-complete {
+        position: absolute;
+        left: 39%;
+        border: none;
+        background-color: transparent;
+        color: green;
+        margin-top: 0.7rem;
+        font-size: 1.5rem;
+        font-family: inherit;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: translateY(1.5px);
+        }
+    }
+
+    &__btn-delete {
+        position: absolute;
+        left: 43.6%;
+        border: none;
+        background-color: transparent;
+        color: red;
+        margin-top: 0.7rem;
+        font-size: 1.5rem;
+        font-family: inherit;
+
+        &:focus {
+            outline: none;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            transform: translateY(1.5px);
+        }
+    }
+   
+}
+
+.complete-task {
+    flex: 0 0 50%;
+    
+
+    &__title {
+        width: 80%;
+        margin: 2rem auto;
+        text-align: center;
+        background-color: var(--color-title-main-2);
+        border-radius: 100px;
+        color: var(--color-grey-light-3);
+    }
+
+    &__title-name {
+        font-size: 3rem;
+    }
+
+    &__span {
+
+    }
+
+    //container
+
+    &__items {
+        background-color: #fff;
+        width: 80%;
+        min-height: 35rem;
+        margin: auto;
+        border: 3px solid var(--color-title-main-2);
+        border-radius: 3px;
+        padding: .7rem 2rem;
+        font-size: 2rem;
+    }
+
+    // ul
+    
+    &__item-list {
+        list-style: none;
+    }
+
+    // li
+
+    &__single-item {
+        
+    }
+
+    
+}
+
+///////////////////////////////////
+// FOOTER
+
+.copyright {
+    font-size: 1.4rem;
+    color: #aaa;
+}
