@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="title">
+                <h1 class="title__name">ToDo App</h1>
+            </div>
+            <form action="#" class="add">
+                <input type="text" class="add__input" placeholder="Add new Task">
+                <button class="add__button">
+                    <svg class="add__icon">
+                        <use xlink:href="img/sprite.svg#icon-circle-with-plus"></use>
+                    </svg>
+                </button>
+            </form>
+        </header>
+
+        <main class="content">
+            <div class="task-list">
+                <div class="task-list__title">
+                    <h1 class="task-list__title-name">Your ToDo List for Today: <span class="task-list__span">0</span></h1>
+                </div>
+                <div class="task-list__items">
+                    <ul class="task-list__item-list">
+    
+                    </ul>
+                </div>
+            </div>
+            <div class="complete-task">
+                <div class="complete-task__title">
+                    <h1 class="complete-task__title-name">Your Done ToDo's: <span class="complete-task__span">0</span></h1>
+                </div>
+                <div class="complete-task__items">
+                    <ul class="complete-task__item-list">
+    
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p class="copyright">&copy; Copyright 2020 by Dawid Oleksiuk. All rights reserved. </p>
+        </footer>
+
+    </div>
+
+
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>
