@@ -32,6 +32,10 @@
     background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.94)), url(../img/image-2.jpg) !important;
     background-size: cover;
     background-position: center;
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
 }
 
 

@@ -35,6 +35,10 @@
         transition: all .1s linear;
         margin-top: -2.5rem;
 
+        @include respond(phone) {
+            width: 100%;
+        }
+
         &:focus {
             outline: none;
             width: 100%;
@@ -108,15 +112,8 @@
     // container
 
     &__items {
-        background-color: #fff;
-        width: 80%;
-        min-height: 35rem;
-        margin: auto;
+        @include items;
         border: 3px solid var(--color-title-main-1);
-        border-radius: 3px;
-        padding: .7rem 2rem;
-        font-size: 2rem;
-        
     }
 
     //ul
@@ -128,20 +125,16 @@
     // li
     
     &__single-item {
-        // display: flex;
-        // justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
     }
 
     &__btn-complete {
-        position: absolute;
-        left: 39%;
-        border: none;
-        background-color: transparent;
+        @include btn-list;
+        padding-right: 1rem;
         color: green;
-        margin-top: 0.7rem;
-        font-size: 1.5rem;
-        font-family: inherit;
 
         &:focus {
             outline: none;
@@ -157,14 +150,9 @@
     }
 
     &__btn-delete {
-        position: absolute;
+        @include btn-list;
         left: 43.6%;
-        border: none;
-        background-color: transparent;
         color: red;
-        margin-top: 0.7rem;
-        font-size: 1.5rem;
-        font-family: inherit;
 
         &:focus {
             outline: none;
@@ -205,14 +193,8 @@
     //container
 
     &__items {
-        background-color: #fff;
-        width: 80%;
-        min-height: 35rem;
-        margin: auto;
+        @include items;
         border: 3px solid var(--color-title-main-2);
-        border-radius: 3px;
-        padding: .7rem 2rem;
-        font-size: 2rem;
     }
 
     // ul
