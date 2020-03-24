@@ -6,4 +6,4 @@ Added:
 -respons for mobile and big desktop (media queries)
 -respons for buttons
 -Better optymalization
-- Content respons
+-Respons for Content
