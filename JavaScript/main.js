@@ -9,7 +9,7 @@
     const completeList = document.querySelector('.complete-task__single-item')
         
     const remove = (e) => {
-        e.target.parentNode.remove(this.parentNode);
+        e.target.parentNode.parentNode.remove(this.parentNode);
         taskToday.textContent = listItems.length;
     }
 
@@ -17,8 +17,8 @@
         const completeTask = document.createElement('li');
         completeTask.className = 'complete-task__single-item'
         completeUl.appendChild(completeTask);
-        completeTask.textContent = e.target.parentNode.textContent.slice(0, -14);
-        e.target.parentNode.remove(this.parentNode);
+        completeTask.textContent = e.target.parentNode.parentNode.textContent.slice(0, -14);
+        e.target.parentNode.parentNode.remove(this.parentNode);
         taskToday.textContent = listItems.length;
         counter++;
         taskComplete.textContent = counter;
@@ -31,7 +31,7 @@ const add = (e) => {
     if (taskText == '') return;
     const task = document.createElement('li');
     task.className = 'task-list__single-item';
-    task.innerHTML = taskText + "<button class=task-list__btn-complete>Complete</button>" + "<button class=task-list__btn-delete>Delete</button>";
+    task.innerHTML = taskText + "<div class=buttons><button class=task-list__btn-complete>Complete</button>" + "<button class=task-list__btn-delete>Delete</button></div>";
     ulItems.appendChild(task);
     input.value = '';
     taskToday.textContent = listItems.length;
