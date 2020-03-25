@@ -11,7 +11,7 @@ class List {
 
         const remove = (e) => {
             e.target.parentNode.parentNode.remove(this.parentNode);
-            taskToday.textContent = listItems.length;
+            _taskToday.textContent = listItems.length;
         }
 
 
